@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService xmlns:con="http://eviware.com/soapui/config" port="8081" path="/" host="localhost" name="SOAP_VS_2" id="1499e446-ddfe-44ca-9a95-204358930b3c" routeModeEnabled="true" routeUnmatchedOperation="false" addUnmatchedOperation="false" routeEndpoint="http://rapis02.localhost.local/SOAP/Service1.asmx">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting>
+    <con:setting id="1499e446-ddfe-44ca-9a95-204358930b3cfileName">SOAP_VS_2</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>200</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:minApplicationDelay>1</con:minApplicationDelay>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources>
+    <con:dataSource>
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>COUNTRY</GeneratorType0>
+          <PropertyName0>prop1</PropertyName0>
+          <repetitionCountprop1>1</repetitionCountprop1>
+          <repeatValuesprop1>true</repeatValuesprop1>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>DS1</con:name>
+      <con:property>prop1</con:property>
+    </con:dataSource>
+  </con:dataSources>
+  <con:headerValidator type="DIGEST"/>
+</con:mockService>

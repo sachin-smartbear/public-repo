@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/testShort" method="GET" resourcePath="/testShort" id="c4c23684-a5d5-43f0-9d0f-2eae19005715">
+  <con:settings>
+    <con:setting id="c4c23684-a5d5-43f0-9d0f-2eae19005715fileName">%2FtestShort</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>QUERY_MATCH</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="02893b27-f97f-4444-ac74-0f072c979331" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+  <con:response name="Response 2" id="cadc052f-4ccb-490a-902d-216a7beada71" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

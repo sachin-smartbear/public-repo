@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation xmlns:con="http://eviware.com/soapui/config" id="6d1fb6ca-bf58-47c3-b7b5-613ac991cf27" name="JMS Request 3">
+  <con:settings>
+    <con:setting id="6d1fb6ca-bf58-47c3-b7b5-613ac991cf27fileName">JMS-Request-3</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>QUERY_MATCH</con:dispatchStyle>
+  <con:dispatchConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:MockOperationQueryMatchDispatch">
+    <con:query>
+      <con:name>q123</con:name>
+      <con:type>JSONPath</con:type>
+      <con:query>some text</con:query>
+      <con:match>q2</con:match>
+      <con:response>Response 2</con:response>
+    </con:query>
+  </con:dispatchConfig>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:operationProperties>
+    <con:property>
+      <con:name>JmsServer</con:name>
+      <con:value>JMS Virt</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConnectorLabel</con:name>
+      <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </con:property>
+    <con:property>
+      <con:name>InitialContextFactory</con:name>
+      <con:value>org.apache.activemq.jndi.ActiveMQInitialContextFactory</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ProviderUrl</con:name>
+      <con:value>tcp://localhost:61616</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ConnectionFactory</con:name>
+      <con:value>ConnectionFactory</con:value>
+    </con:property>
+    <con:property>
+      <con:name>ReceiveDestinationJndiName</con:name>
+      <con:value>Q5</con:value>
+    </con:property>
+    <con:property>
+      <con:name>SendDestinationJndiName</con:name>
+      <con:value>Q6</con:value>
+    </con:property>
+    <con:property>
+      <con:name>UserName</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>Password</con:name>
+      <con:value/>
+    </con:property>
+  </con:operationProperties>
+  <con:customResponse name="Response 1" id="337f00b8-ce27-4a4c-a8da-77ad42a1727d">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>BindableJmsMockResponse.messageAsString</con:name>
+        <con:value>// Use the 'message' variable to write a JMS MapMessage
+//
+// For example:
+//
+// message.setInt('people', 10)
+message.setString('city', 'London')</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.destination</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.manualDestination</con:name>
+        <con:value>#ManualJmsConfiguration properties
+
+receiveDestinationJndiName=Q1
+password=
+initialContextFactoryClass=org.apache.activemq.jndi.ActiveMQInitialContextFactory
+userName=
+connectionFactoryJndiName=ConnectionFactory
+providerUrl=tcp\://localhost\:61616
+sendDestinationJndiName=Q2
+</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.correlationId</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.type</con:name>
+        <con:value>MAP</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.replyTo</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
+        <con:value>true</con:value>
+      </con:property>
+      <con:property>
+        <con:name>JmsServer</con:name>
+        <con:value>JMS Virt</con:value>
+      </con:property>
+      <con:property>
+        <con:name>ExtraJndiProperties</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+  <con:customResponse name="Response 2" id="918fd832-9eaf-44c7-92d1-dd6e3cd085f1">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>BindableJmsMockResponse.messageAsString</con:name>
+        <con:value>VIRT!!!</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.destination</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.manualDestination</con:name>
+        <con:value>#ManualJmsConfiguration properties
+
+receiveDestinationJndiName=Q1
+password=
+initialContextFactoryClass=org.apache.activemq.jndi.ActiveMQInitialContextFactory
+userName=
+connectionFactoryJndiName=ConnectionFactory
+providerUrl=tcp\://localhost\:61616
+sendDestinationJndiName=Q2
+</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.correlationId</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.type</con:name>
+        <con:value>TEXT</con:value>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.replyTo</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+      <con:property>
+        <con:name>BindableJmsMockResponse.useIncomingReplyTo</con:name>
+        <con:value>true</con:value>
+      </con:property>
+      <con:property>
+        <con:name>JmsServer</con:name>
+        <con:value>JMS Virt</con:value>
+      </con:property>
+      <con:property>
+        <con:name>ExtraJndiProperties</con:name>
+        <con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+</con:customOperation>

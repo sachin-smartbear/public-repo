@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/testClassArray" method="GET" resourcePath="/testClassArray" id="718de2f9-c7d1-464d-b0cc-778573cf6177">
+  <con:settings>
+    <con:setting id="718de2f9-c7d1-464d-b0cc-778573cf6177fileName">%2FtestClassArray</con:setting>
+  </con:settings>
+  <con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <con:dispatchStyle>RANDOM</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="05900e96-fa17-4c74-8d88-c43683d60476" httpResponseStatus="200" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" mediaType="application/json" encoding="utf-8" dataSource="">
+    <con:settings/>
+    <con:responseContent>[{"Test_array":[0,1,2,3,4,5,6,7,8,9],"Test_int":555,"Test_string":"REST Virt Response","Test_transfer_array":"Lenght array 10"},{"Test_array":[0,1,2,3,4,5,6,7,8,9],"Test_int":555,"Test_string":"777","Test_transfer_array":"Lenght array 10"}]</con:responseContent>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>private</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>Microsoft-IIS/7.5</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-AspNet-Version</con:name>
+      <con:value>4.0.30319</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Mon, 23 Mar 2020 14:07:31 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Powered-By</con:name>
+      <con:value>ASP.NET</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 2" id="bb3559b5-888c-4cf1-8806-4e3cf1458208" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 3" id="3e95fac8-dd86-4a92-bd28-1cafee73406e" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

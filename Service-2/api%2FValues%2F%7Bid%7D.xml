@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/Values/{id}" id="be76338e-b051-4c2e-9e35-cdef353e1442">
+  <con:settings>
+    <con:setting id="be76338e-b051-4c2e-9e35-cdef353e1442fileName">api%2FValues%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="b09dfe34-d087-4d49-a56e-e285cde3596b" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="095742ee-0bbd-4d41-8f20-d2f859162ef7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="51627557-6f12-4aad-87a9-9f64f76f0225" method="PUT">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="8b943183-c3ac-4162-b650-e68504fc90a8" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="08597e7e-4377-42ae-ab2b-50b35ad057cf" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="d975a0bb-810d-4931-84a7-253b2f7ffb51" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

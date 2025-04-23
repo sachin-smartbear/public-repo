@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/testByte" method="GET" resourcePath="/testByte" id="315faf66-e300-4083-a2d2-86601f168fe5">
+  <con:settings>
+    <con:setting id="315faf66-e300-4083-a2d2-86601f168fe5fileName">%2FtestByte</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>PARAMETER</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer>
+    <con:ParameterDispatcherRule>
+      <con:ruleName>Rule 1</con:ruleName>
+      <con:parameterDispatcherCondition>
+        <con:parameterType>QUERY</con:parameterType>
+        <con:parameterOperationType>EQUALS</con:parameterOperationType>
+        <con:parameterName>x</con:parameterName>
+        <con:parameterValue>14</con:parameterValue>
+      </con:parameterDispatcherCondition>
+      <con:responseName>Response 1</con:responseName>
+    </con:ParameterDispatcherRule>
+  </con:parameterDispatcherRuleContainer>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="bfae13ef-a21f-4dff-98fb-be3494122a0a" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+  <con:response name="Response 2" id="b590b9a8-aaa3-4581-9f98-a31acd61cedf" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

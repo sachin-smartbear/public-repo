@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService xmlns:con="http://eviware.com/soapui/config" port="8081" path="/" host="localhost" name="SOAP_VS_3" id="ee5ea218-87c5-422a-9d2e-06def05f8832" routeModeEnabled="true" addUnmatchedOperation="false" routeEndpoint="http://rapis02.localhost.local/SOAP/Service1.asmx">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting>
+    <con:setting id="ee5ea218-87c5-422a-9d2e-06def05f8832fileName">SOAP_VS_3</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>5</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>4</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>2</con:coreThreadPoolCapacity>
+    <con:minLatency>10</con:minLatency>
+    <con:minApplicationDelay>15</con:minApplicationDelay>
+    <con:virtError>
+      <con:code>200</con:code>
+      <con:start>50</con:start>
+      <con:content>ERRRRRRROOOOOOOOR!!!!!!</con:content>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources>
+    <con:dataSource>
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file/>
+          <worksheet/>
+          <cell>A1</cell>
+          <ignoreEmpty>false</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 1</con:name>
+    </con:dataSource>
+    <con:dataSource>
+      <con:dataSource type="File">
+        <con:configuration>
+          <fileName/>
+          <separator>,</separator>
+          <trim>true</trim>
+          <charset>Cp1252</charset>
+          <quotedValues>false</quotedValues>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 2</con:name>
+    </con:dataSource>
+    <con:dataSource>
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">33223&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">2132&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">123321&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">213223&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 3</con:name>
+      <con:property>123</con:property>
+    </con:dataSource>
+    <con:dataSource>
+      <con:dataSource type="JDBC">
+        <con:configuration>
+          <driver/>
+          <connstr/>
+          <pass/>
+          <Connection/>
+          <query/>
+          <fetchSize/>
+          <stored-procedure>false</stored-procedure>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 4</con:name>
+    </con:dataSource>
+    <con:dataSource>
+      <con:dataSource type="Data Connection">
+        <con:configuration>
+          <Connection>&lt;None></Connection>
+          <query/>
+          <fetchSize/>
+          <stored-procedure>false</stored-procedure>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 5</con:name>
+    </con:dataSource>
+    <con:dataSource>
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>0</generatorsTotalNumber>
+          <lastSelectedProperty>-1</lastSelectedProperty>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 6</con:name>
+      <con:trimValues>true</con:trimValues>
+      <con:entitizeValues>true</con:entitizeValues>
+    </con:dataSource>
+  </con:dataSources>
+  <con:headerValidator type="BASIC"/>
+</con:mockService>

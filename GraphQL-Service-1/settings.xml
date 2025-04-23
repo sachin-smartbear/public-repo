@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:GraphQLService" id="7038506b-7953-4b27-bacc-a3f6f86e6156" name="GraphQL Service 1" type="graphql" definitionUrl="http://rapis02.localhost.local:4000/schema.graphqls">
+  <con:settings>
+    <con:setting id="7038506b-7953-4b27-bacc-a3f6f86e6156fileName">GraphQL-Service-1</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="http://rapis02.localhost.local:4000/schema.graphqls">
+    <con:part>
+      <con:url>http://rapis02.localhost.local:4000/schema.graphqls</con:url>
+      <con:content>﻿schema {
+  query: RootQueryType
+  mutation: Mutation
+}
+
+type AdditionalInfo {
+  made: String
+  disign: String
+  warranty: String
+  AnnualFailureRate: Float
+}
+
+type Customer {
+  id: String
+  name: String
+  email: String
+  age: Int
+  status: Boolean
+  products: [Product]
+  data: ExtraInfo
+}
+
+"""Date custom scalar type"""
+scalar Date
+
+type ExtraInfo {
+  LicenseType: String
+  Status: String
+}
+
+type Mutation {
+  addCustomer(name: String!, email: String!, age: Int!): Customer
+  editCustomer(id: String!, name: String, email: String, age: Int, extraData: Date): Customer
+}
+
+type Product {
+  productID: Int
+  productName: String
+  quantity: Int
+  info: AdditionalInfo
+}
+
+type RootQueryType {
+  customer(id: String): Customer
+  customers: [Customer]
+}</con:content>
+      <con:type>https://graphql.org/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://rapis02.localhost.local:4000/graphql</con:endpoint>
+  </con:endpoints>
+</con:interface>

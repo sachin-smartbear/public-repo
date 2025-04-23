@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/getArrayInt" path="/getArrayInt" id="3b9b4a37-1067-4373-8b7f-1ebb2ac83703">
+  <con:settings>
+    <con:setting id="3b9b4a37-1067-4373-8b7f-1ebb2ac83703fileName">%2FgetArrayInt</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="152f075f-7f4f-4b0e-8f4f-2211190a17a1" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="cc174949-69ef-4f02-a3a3-4ba36f954828" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080/WCFREST/Service.svc</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/inheritanceClassSuper" path="/inheritanceClassSuper" id="8d50990d-b257-4260-b703-c167939231b8">
+  <con:settings>
+    <con:setting id="8d50990d-b257-4260-b703-c167939231b8fileName">%2FinheritanceClassSuper</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="c14aa946-9a17-492c-87be-26e436d93fb4" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="46f5ad65-0ea1-4c67-8238-e6d16eda187e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080/WCFREST/Service.svc</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

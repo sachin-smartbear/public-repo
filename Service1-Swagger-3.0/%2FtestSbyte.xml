@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/testSbyte" path="/testSbyte" id="973acf39-eb21-4efc-84e5-16e68813b0fc">
+  <con:settings>
+    <con:setting id="973acf39-eb21-4efc-84e5-16e68813b0fcfileName">%2FtestSbyte</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="6d9ddce0-1291-42fd-b402-ceff17504a55" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="4489b524-3fb6-483f-a631-28ebcdd0b64d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080/WCFREST/Service.svc</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/HelloWorld" method="GET" resourcePath="/HelloWorld" id="5a5b58aa-fd27-43ed-98c2-f06826d11dd2">
+  <con:settings>
+    <con:setting id="5a5b58aa-fd27-43ed-98c2-f06826d11dd2fileName">%2FHelloWorld</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:assertion type="HTTP Header Equals" id="398df127-4fec-468c-9aa2-8e5cc305e5c9" name="HTTP Header Equals">
+    <con:configuration>
+      <Header>wee</Header>
+      <Value>200</Value>
+      <ignoreCase>false</ignoreCase>
+      <useRegEx>false</useRegEx>
+    </con:configuration>
+  </con:assertion>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="03eb4380-7d3a-4e66-acb5-9f0822768c30" httpResponseStatus="201" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" mediaType="application/json" encoding="utf-8" dataSource="">
+    <con:settings/>
+    <con:script>log.info("Response Script")</con:script>
+    <con:responseContent>"Hello World Virt"</con:responseContent>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>private</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>Microsoft-IIS/7.5</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-AspNet-Version</con:name>
+      <con:value>4.0.30319</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Mon, 23 Mar 2020 14:02:39 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Powered-By</con:name>
+      <con:value>ASP.NET</con:value>
+    </con:header>
+  </con:response>
+  <con:response name="Response 2" id="ef635add-5e12-4aed-9b43-c5ec8088be51" httpResponseStatus="200" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<Response>
+   <e>Hello</e>
+   <e>world</e>
+</Response>]]></con:responseContent>
+  </con:response>
+  <con:response name="Response 3" id="54a8f189-97d0-4c17-a03d-49f00eae0a61" httpResponseStatus="207" mediaType="text/xml" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>text/xml</con:responseContent>
+  </con:response>
+  <con:response name="Response 4" id="d80c392d-a17b-44c8-9121-4925aede6243" httpResponseStatus="404" mediaType="multipart/form-data" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>asdasdasas</con:responseContent>
+  </con:response>
+  <con:response name="Response 5" id="f9865c47-47be-4144-9ac8-3aa88c9eca92" httpResponseStatus="511" mediaType="multipart/mixed" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>3 4 5 6 7</con:responseContent>
+  </con:response>
+</con:restMockAction>

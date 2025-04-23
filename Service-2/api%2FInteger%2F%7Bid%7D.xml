@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/Integer/{id}" id="264e9500-9c13-4ee2-96dd-358cbccb22f7">
+  <con:settings>
+    <con:setting id="264e9500-9c13-4ee2-96dd-358cbccb22f7fileName">api%2FInteger%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="ab6bd2ec-7ba3-44c8-b015-297c3cd83cc2" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="636540ba-20ca-4ced-849f-96936d110896" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="fb407625-d5b4-4e82-81b6-543672a2621c" method="PUT">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="10267174-2e08-4177-96c4-25621e269e42" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="4d775aff-edbe-4c15-8de1-9975e9f5d9c7" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="1fcb2f40-8c75-45e3-8a7b-a65e0362cd18" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

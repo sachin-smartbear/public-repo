@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService xmlns:con="http://eviware.com/soapui/config" port="8081" path="/" host="localhost" name="SOAP_VS_4" routeModeEnabled="true" addUnmatchedOperation="true" routeEndpoint="http://rapis02.localhost.local/SOAP/Service1.asmx" id="f65c14b9-afa3-4bbf-8a4f-001c8cc50d6e">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting>
+    <con:setting id="f65c14b9-afa3-4bbf-8a4f-001c8cc50d6efileName">SOAP_VS_4</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>5</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>6</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>4</con:coreThreadPoolCapacity>
+    <con:minLatency>10</con:minLatency>
+    <con:minApplicationDelay>8</con:minApplicationDelay>
+    <con:virtError>
+      <con:code>400</con:code>
+      <con:start>50</con:start>
+      <con:content>ERROR!!!!!!</con:content>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources/>
+  <con:headerValidator type="NONE"/>
+</con:mockService>

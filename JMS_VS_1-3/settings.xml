@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customMockService xmlns:con="http://eviware.com/soapui/config" name="JMS_VS_1 3" autoStart="false" id="5f2bc26c-0c90-4d36-881a-570e33fccd8e">
+  <con:settings>
+    <con:setting id="5f2bc26c-0c90-4d36-881a-570e33fccd8efileName">JMS_VS_1-3</con:setting>
+  </con:settings>
+  <con:startScript>log.info("Start Script")</con:startScript>
+  <con:stopScript>log.info("Stop Script")</con:stopScript>
+  <con:properties>
+    <con:property>
+      <con:name>jmsMockService.ttlHopLimit</con:name>
+      <con:value>10</con:value>
+    </con:property>
+  </con:properties>
+  <con:onRequestScript>log.info("OnRequest Script")</con:onRequestScript>
+  <con:afterRequestScript>log.info("After Script")</con:afterRequestScript>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>10</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>10</con:coreThreadPoolCapacity>
+    <con:minLatency>1</con:minLatency>
+    <con:minApplicationDelay>5</con:minApplicationDelay>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources>
+    <con:dataSource>
+      <con:dataSource type="JDBC">
+        <con:configuration>
+          <driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver>
+          <connstr>jdbc:sqlserver://54.216.206.181:1433;databaseName=DatabaseVariable;user=DatabaseVariable;password=PASS_VALUE</connstr>
+          <pass>DatabaseVariable</pass>
+          <Connection>MSSQL( Default environment )</Connection>
+          <query>Select COFFEES.TOTAL as COFFEES_TOTAL, COFFEES.COF_NAME as COFFEES_COF_NAME, COFFEES.PRICE as COFFEES_PRICE, COFFEES.SALES as COFFEES_SALES, COFFEES.SUP_ID as COFFEES_SUP_ID
+From COFFEES</query>
+          <fetchSize/>
+          <stored-procedure>false</stored-procedure>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 1</con:name>
+      <con:property>COFFEES_COF_NAME</con:property>
+      <con:property>COFFEES_SUP_ID</con:property>
+      <con:property>COFFEES_PRICE</con:property>
+      <con:property>COFFEES_SALES</con:property>
+      <con:property>COFFEES_TOTAL</con:property>
+      <con:preparedProperties>&lt;xml-fragment/></con:preparedProperties>
+    </con:dataSource>
+  </con:dataSources>
+  <con:virtProperties>
+    <con:property>
+      <con:name>mockServiceType</con:name>
+      <con:value>JMS</con:value>
+    </con:property>
+  </con:virtProperties>
+</con:customMockService>

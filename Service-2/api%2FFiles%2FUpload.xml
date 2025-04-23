@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/Files/Upload" id="3c0bb1a0-0fdf-4830-94f6-5b1510790f7e">
+  <con:settings>
+    <con:setting id="3c0bb1a0-0fdf-4830-94f6-5b1510790f7efileName">api%2FFiles%2FUpload</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="e838e2a8-76bc-43cf-8770-5901241f1bdc" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="ebe6440b-4971-403f-a478-883efc76c6c7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

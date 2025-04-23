@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operationGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" type="query" name="Queries" id="76003c1c-a154-4ab0-858c-79738daa9ac6">
+  <con:settings>
+    <con:setting id="76003c1c-a154-4ab0-858c-79738daa9ac6fileName">Queries</con:setting>
+  </con:settings>
+  <con:graphQLOperation name="customer" bindingOperationName="customer" id="352b2d54-00a6-413f-88bc-df03e2e8d100">
+    <con:settings/>
+    <con:graphQLRequest name="customer" id="9318a9f5-671b-408f-bde8-cf44a59bc5e0">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.localhost.local:4000/graphql</con:endpoint>
+      <con:request>{"query":"query {\n  customer(id: \"1\") {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+  <con:graphQLOperation name="customers" bindingOperationName="customers" id="336f3635-d82e-46e2-b9ab-87c4ad546a64">
+    <con:settings/>
+    <con:graphQLRequest name="customers" id="bb1eab72-d186-495d-9e61-0034caf23f0c">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.localhost.local:4000/graphql</con:endpoint>
+      <con:request>{"query":"query {\n  customers {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}\n","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:graphQLRequest>
+  </con:graphQLOperation>
+</con:operationGroup>

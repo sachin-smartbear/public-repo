@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/testUint" method="GET" resourcePath="/testUint" id="ce85d5e6-3e7c-4e0a-a592-12c679f47d0b">
+  <con:settings>
+    <con:setting id="ce85d5e6-3e7c-4e0a-a592-12c679f47d0bfileName">%2FtestUint</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>XPATH</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="1fb8b530-26de-48c4-86cb-6aa339848c45" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+  <con:response name="Response 2" id="c6a362d5-b67d-4500-b62b-85af0baf2776" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 3" id="86984a1d-39f3-4750-a709-679c8ead62c7" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response 4" id="1a63380e-a203-4c49-8f8b-1ce122508c57" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

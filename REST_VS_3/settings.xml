@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService xmlns:con="http://eviware.com/soapui/config" port="8082" path="/" host="localhost" name="REST_VS_3" routeModeEnabled="true" routeEndpoint="http://rapis02.localhost.local/WebAPI2/WabAPI.wadl" addUnmatchedOperation="false" id="a7509b8e-ac65-4271-a0a9-cc1caf1fd43b" routeUnmatchedOperation="false">
+  <con:settings>
+    <con:setting id="a7509b8e-ac65-4271-a0a9-cc1caf1fd43bfileName">REST_VS_3</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>12500000</con:inputBandwidth>
+    <con:outputBandwidth>12500000</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>10</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:minApplicationDelay>0</con:minApplicationDelay>
+    <con:virtError>
+      <con:code>501</con:code>
+      <con:start>0</con:start>
+      <con:content>Error Message</con:content>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources>
+    <con:dataSource>
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file>E:/project-for-smoke-test/ForDataSource.xls</file>
+          <worksheet/>
+          <cell>A1</cell>
+          <ignoreEmpty>false</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Data Source 1</con:name>
+      <con:property>ID</con:property>
+      <con:property>Country</con:property>
+    </con:dataSource>
+  </con:dataSources>
+  <con:headerValidator type="CUSTOM" customHeader="CustomHeader" customStartsWith="CH"/>
+  <con:conditionalMatchConfiguration>
+    <con:validateSignature>true</con:validateSignature>
+    <con:validateSignatureHeaders>false</con:validateSignatureHeaders>
+  </con:conditionalMatchConfiguration>
+</con:restMockService>

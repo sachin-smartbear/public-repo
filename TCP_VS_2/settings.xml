@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customMockService xmlns:con="http://eviware.com/soapui/config" name="TCP_VS_2" id="8bdf4016-3629-4e1f-8a35-2938385bd4ed">
+  <con:settings>
+    <con:setting id="8bdf4016-3629-4e1f-8a35-2938385bd4edfileName">TCP_VS_2</con:setting>
+  </con:settings>
+  <con:properties>
+    <con:property>
+      <con:name>tcpMockService.port</con:name>
+      <con:value>9897</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.routeModeEnabled</con:name>
+      <con:value>true</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.routeUnmatchedOperation</con:name>
+      <con:value>true</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.addUnmatchedOperation</con:name>
+      <con:value>true</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.requestDelimiterType</con:name>
+      <con:value>Segment Forwarding</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.requestDelimiterParams</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.responseDelimiterType</con:name>
+      <con:value>Segment Forwarding</con:value>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.responseDelimiterParams</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>tcpMockService.targetSocket</con:name>
+      <con:value>rapis02.localhost.local/WCFREST/Service.svc</con:value>
+    </con:property>
+  </con:properties>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>-1</con:inputBandwidth>
+    <con:outputBandwidth>-1</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:virtError>
+      <con:start>0</con:start>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:virtProperties>
+    <con:property>
+      <con:name>mockServiceType</con:name>
+      <con:value>TCP</con:value>
+    </con:property>
+  </con:virtProperties>
+</con:customMockService>

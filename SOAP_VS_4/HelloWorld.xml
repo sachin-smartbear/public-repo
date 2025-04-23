@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation xmlns:con="http://eviware.com/soapui/config" name="HelloWorld" id="03dd575b-4979-4029-a399-7a22a4e9eb35" interface="Test_serviceSoap" operation="HelloWorld">
+  <con:settings>
+    <con:setting id="03dd575b-4979-4029-a399-7a22a4e9eb35fileName">HelloWorld</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="d4ab2717-25e1-4035-a91d-4fe20519b0f4" httpResponseStatus="200" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <HelloWorldResponse xmlns="http://localhost/test_service/Service1.asmx">
+         <HelloWorldResult>Hello World Virt</HelloWorldResult>
+      </HelloWorldResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/HelloWorld"/>
+  </con:response>
+</con:mockOperation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/CC1946/GetHtml" id="02d4b359-bc90-4e6d-8c55-042dd9e836af">
+  <con:settings>
+    <con:setting id="02d4b359-bc90-4e6d-8c55-042dd9e836affileName">api%2FCC1946%2FGetHtml</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="cf9fff29-8588-4a1f-9139-61f1aa76c432" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="7d8a7ff9-85ff-455f-bf37-f6c91f88552d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

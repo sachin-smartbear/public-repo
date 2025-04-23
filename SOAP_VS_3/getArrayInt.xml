@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockOperation xmlns:con="http://eviware.com/soapui/config" name="getArrayInt" id="575b0e8f-32f7-4310-ace4-4ff1ea086099" interface="Test_serviceSoap" operation="getArrayInt">
+  <con:settings>
+    <con:setting id="575b0e8f-32f7-4310-ace4-4ff1ea086099fileName">getArrayInt</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="94bcb56d-4a9a-4a17-ba3e-a119940d413f" httpResponseStatus="200" encoding="UTF-8" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getArrayIntResponse>
+         <!--Optional:-->
+         <ser:getArrayIntResult>
+            <!--Zero or more repetitions:-->
+            <ser:int>?</ser:int>
+         </ser:getArrayIntResult>
+      </ser:getArrayIntResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/getArrayInt"/>
+  </con:response>
+  <con:response name="Response 2" id="90380633-0cc6-4650-919a-7b361a9f48b9" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getArrayIntResponse>
+         <!--Optional:-->
+         <ser:getArrayIntResult>
+            <!--Zero or more repetitions:-->
+            <ser:int>?</ser:int>
+         </ser:getArrayIntResult>
+      </ser:getArrayIntResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/getArrayInt"/>
+  </con:response>
+  <con:response name="Custom Error Response" id="446e9cd6-25fa-4749-9093-03ea2fc1415f" httpResponseStatus="200" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getArrayIntResponse>
+         <!--Optional:-->
+         <ser:getArrayIntResult>
+            <!--Zero or more repetitions:-->
+            <ser:int>?</ser:int>
+         </ser:getArrayIntResult>
+      </ser:getArrayIntResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/getArrayInt"/>
+  </con:response>
+</con:mockOperation>

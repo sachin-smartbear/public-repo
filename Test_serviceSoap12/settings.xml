@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:WsdlInterface" id="235714ee-8ce3-4f28-82bb-432b003042cc" wsaVersion="NONE" name="Test_serviceSoap12" type="wsdl" bindingName="{http://localhost/test_service/Service1.asmx}Test_serviceSoap12" soapVersion="1_2" anonymous="optional" definition="http://rapis02.localhost.local/SOAP/Service1.asmx?WSDL">
+  <con:settings>
+    <con:setting id="235714ee-8ce3-4f28-82bb-432b003042ccfileName">Test_serviceSoap12</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://rapis02.localhost.local:8080/SOAP/Service1.asmx</con:endpoint>
+  </con:endpoints>
+</con:interface>

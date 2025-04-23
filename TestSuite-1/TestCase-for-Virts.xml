@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="562cdf30-9b5d-4a05-82c0-d085ed210e2b" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase for Virts" searchProperties="true" timeout="0">
+  <con:description>Run this test case after all virts are started</con:description>
+  <con:settings>
+    <con:setting id="562cdf30-9b5d-4a05-82c0-d085ed210e2bfileName">TestCase-for-Virts</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="request" id="8efb7883-a86a-436c-b527-3a87b1e7fd85" name="SOAP HelloWorld Virt">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>HelloWorld</con:operation>
+      <con:request name="SOAP HelloWorld Virt" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="b0295c6a-5096-4a51-b587-dbec3122ae53">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8081/</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:HelloWorld/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="3145a96f-7734-4dcf-8fae-b6093517ee4b" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="79082460-e701-4b82-bfbb-70761e718ba1" name="Not SOAP Fault"/>
+        <con:assertion type="Schema Compliance" id="ae8a3e7c-ef3b-4746-9628-985e5fe65be6" name="Schema Compliance">
+          <con:configuration/>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="b390454c-0910-4dbf-951c-85e772db97fe" name="Match content of [HelloWorldResult]">
+          <con:configuration>
+            <path>declare namespace ns1='http://localhost/test_service/Service1.asmx';
+//ns1:HelloWorldResponse[1]/ns1:HelloWorldResult[1]/text()</path>
+            <content>Hello World Virt</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/HelloWorld"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="282d8550-6bc7-4261-99ad-4b4df4f6233f" name="SOAP Con_Stroka Virt">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Con_Stroka Virt" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="e0efa3ba-0cdd-43ba-bfac-8f354a6c9745">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8081/</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka>
+         <!--Optional:-->
+         <ser:x>SOAP</ser:x>
+         <!--Optional:-->
+         <ser:y>Request</ser:y>
+      </ser:Con_Stroka>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="Valid HTTP Status Codes" id="659aae7e-352a-447e-a8fb-4420399658ca" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="SOAP Fault Assertion" id="408475b4-ad8a-492d-8097-26fdfe3f73d1" name="Not SOAP Fault"/>
+        <con:assertion type="Schema Compliance" id="8133a2a7-e8fc-44f3-a3b9-ea5a4d007300" name="Schema Compliance">
+          <con:configuration/>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="90a878da-4bd1-43ef-b3ef-1c5076c3eaa8" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://localhost/test_service/Service1.asmx';
+//ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</con:xpath>
+              <con:element>Con_StrokaResult</con:element>
+              <con:type>XmlString</con:type>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>SOAP Request Virt</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <Con_StrokaResponse xmlns="http://localhost/test_service/Service1.asmx">
+         <Con_StrokaResult>SOAP Request Virt</Con_StrokaResult>
+      </Con_StrokaResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST HelloWorld Virt" id="79dae540-6982-4254-85d0-098ded5bce44">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Service1-Swagger-3.0" resourcePath="/HelloWorld" methodName="GET" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST HelloWorld Virt" id="5c35f774-7734-4805-8e72-406754629c98" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8082/</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://rapis02.localhost.local/WCFREST/Service.svc/HelloWorld</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="d4796dab-029e-4575-a863-12dd649852e6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Simple Contains" id="18392cc5-75d1-4f1f-88e7-178a531ac0c3" name="Contains">
+          <con:configuration>
+            <token>Hello World Virt</token>
+            <ignoreCase>false</ignoreCase>
+            <useRegEx>false</useRegEx>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST testClassArray Virt" id="93a790a0-8949-4058-b5b1-3f922083b5c6">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Service1-Swagger-3.0" resourcePath="/testClassArray" methodName="GET" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST testClassArray Virt" id="6aa7ce4f-64fa-41d5-b540-a8612f1ddbf8" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8082/</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://rapis02.localhost.local/WCFREST/Service.svc/testClassArray</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="ac974a15-b8d8-4389-91ba-943caee7ae24" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="2b5ad653-70e6-4f14-95cb-702d8800c940" name="Match content of [Test_string]">
+          <con:configuration>
+            <path>$[0]['Test_string']</path>
+            <content>"REST Virt Response"</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request Virt" id="b5218dcf-067b-4d48-b326-6b48a41f9f96">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" queryTimeout="2000">
+      <con:dbConnectionName>Postgre</con:dbConnectionName>
+      <con:driver>org.postgresql.Driver</con:driver>
+      <con:connectionString>jdbc:postgresql://54.216.206.181:5432/DatabaseVariable?user=DatabaseVariable&amp;password=PASS_VALUE</con:connectionString>
+      <con:password>DatabaseVariable</con:password>
+      <con:connectionProperties/>
+      <con:query>Select simpleregtest.name, simpleregtest.country, simpleregtest.phone
+From simpleregtest</con:query>
+      <con:assertion type="JDBC Status" id="ce2d5d48-26fb-4f69-b1b5-d74d7b97605b" name="JDBC Status"/>
+      <con:assertion type="JDBC Timeout" id="67159468-0d54-41ae-be42-7fc8364e0886" name="JDBC Timeout">
+        <con:configuration>
+          <JDBCtimeout>2000</JDBCtimeout>
+        </con:configuration>
+      </con:assertion>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request TCP Virt" id="3f79c0b6-306a-40b8-9f6d-bc0158458d9c">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="Service1-Swagger-3.0" resourcePath="/HelloWorld" methodName="GET" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST Request TCP Virt" id="5c35f774-7734-4805-8e72-406754629c98" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:9897</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://rapis02.localhost.local/WCFREST/Service.svc/HelloWorld</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="c3476e42-58d7-48b4-b941-635efb389309" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Simple Contains" id="fafa3751-b78f-4b3d-846e-fc2b14795ea7" name="Contains">
+          <con:configuration>
+            <token>TCP Virt Response</token>
+            <ignoreCase>false</ignoreCase>
+            <useRegEx>false</useRegEx>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>b5218dcf-067b-4d48-b326-6b48a41f9f96</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

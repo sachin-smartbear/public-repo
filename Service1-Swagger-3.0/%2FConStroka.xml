@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/ConStroka" path="/ConStroka" id="7da5d591-0be3-4eb7-94d4-7c37a997b91b">
+  <con:settings>
+    <con:setting id="7da5d591-0be3-4eb7-94d4-7c37a997b91bfileName">%2FConStroka</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="4be88fe8-afa1-4e25-9b31-b2e6617bb0ad" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>x</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+      <con:parameter>
+        <con:name>y</con:name>
+        <con:style>QUERY</con:style>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="9ea0730f-1524-4c9e-acd8-150dcdef88bc" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.localhost.local:8080/WCFREST/Service.svc</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://rapis02.localhost.local/WCFREST/Service.svc/ConStroka</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="x" value="REST"/>
+        <con:entry key="y" value="Request"/>
+      </con:parameters>
+    </con:request>
+  </con:method>
+</con:resource>

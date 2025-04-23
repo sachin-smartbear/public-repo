@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation xmlns:con="http://eviware.com/soapui/config" id="5631144f-4a53-46cd-b014-a899d9f9673b" name="Request 3">
+  <con:settings>
+    <con:setting id="5631144f-4a53-46cd-b014-a899d9f9673bfileName">Request-3</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath>if (message.equals("Hello")) {
+    return 'Response 1'
+} else {
+    return 'Response 2'
+}
+
+//Match based on Hex representation
+import org.apache.commons.codec.binary.Hex
+
+byte[] requestData = mockRequest.getRawRequestData();
+String hexRepresentation = Hex.encodeHexString(requestData);
+
+if (hexRepresentation.equals('48656c6c6f')) {
+    return ['Response 1', 'Response 2'] // You can return multiple responses to one request.
+}</con:dispatchPath>
+  <con:dispatchXPath/>
+  <con:routeEnabled>true</con:routeEnabled>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:saveRoutedResponse>true</con:saveRoutedResponse>
+  <con:operationProperties>
+    <con:property>
+      <con:name>requestData</con:name>
+      <con:value>474554202f48656c6c6f576f726c6420485454502f312e310d0a4163636570742d456e636f64696e673a20677a69702c6465666c6174650d0a436f6e74656e742d4c656e6774683a20300d0a486f73743a206c6f63616c686f73743a393839370d0a436f6e6e656374696f6e3a204b6565702d416c6976650d0a557365722d4167656e743a204170616368652d48747470436c69656e742f342e352e3220284a6176612f31322e302e31290d0a0d0a</con:value>
+    </con:property>
+  </con:operationProperties>
+  <con:customResponse name="Response 1" id="6efc3dc5-8380-4e1b-8042-400704b24d99">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties>
+      <con:property>
+        <con:name>responseData</con:name>
+        <con:value>485454502f312e3120323030204f4b0d0a43616368652d436f6e74726f6c3a20707269766174650d0a436f6e74656e742d4c656e6774683a2031390d0a436f6e74656e742d547970653a206170706c69636174696f6e2f6a736f6e3b20636861727365743d7574662d380d0a5365727665723a204d6963726f736f66742d4949532f372e350d0a582d4173704e65742d56657273696f6e3a20342e302e33303331390d0a582d506f77657265642d42793a204153502e4e45540d0a446174653a204d6f6e2c203233204d617220323032302031343a30323a333920474d540d0a0d0a22544350205669727420526573706f6e736522</con:value>
+      </con:property>
+    </con:responseProperties>
+  </con:customResponse>
+  <con:customResponse name="Response 2" id="70f53505-2079-4451-ade0-461ae791a6b4">
+    <con:settings/>
+    <con:script/>
+    <con:responseProperties/>
+  </con:customResponse>
+</con:customOperation>

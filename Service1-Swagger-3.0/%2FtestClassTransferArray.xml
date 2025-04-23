@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/testClassTransferArray" path="/testClassTransferArray" id="0f148a7a-1f71-49ad-82dc-08d50ea5e10a">
+  <con:settings>
+    <con:setting id="0f148a7a-1f71-49ad-82dc-08d50ea5e10afileName">%2FtestClassTransferArray</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="d2bb1c80-a846-4295-892b-25a87d3509c6" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="839ecdc2-b644-4be7-8140-4aa4862225bb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080/WCFREST/Service.svc</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

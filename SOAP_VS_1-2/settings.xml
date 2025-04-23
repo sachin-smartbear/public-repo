@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService xmlns:con="http://eviware.com/soapui/config" port="8081" path="/" host="localhost" name="SOAP_VS_1 2" id="bf3cd941-a5ce-4735-b355-cc610b1eea5d">
+  <con:description>Description!</con:description>
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting>
+    <con:setting id="bf3cd941-a5ce-4735-b355-cc610b1eea5dfileName">SOAP_VS_1-2</con:setting>
+  </con:settings>
+  <con:startScript>log.info("Start Script")</con:startScript>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>5</con:congestion>
+    <con:inputBandwidth>1250000</con:inputBandwidth>
+    <con:outputBandwidth>1250000</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>10</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:minLatency>10</con:minLatency>
+    <con:minApplicationDelay>0</con:minApplicationDelay>
+    <con:virtError>
+      <con:code>405</con:code>
+      <con:start>50</con:start>
+      <con:content>ERRRRRRROOOOOOOOR!!!!!!</con:content>
+      <con:endless>true</con:endless>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources/>
+  <con:assertion type="JsonPath Match" id="97c3f190-175f-4389-b557-e5befd9c74f4" name="JSONPath Match">
+    <con:configuration>
+      <path/>
+      <content/>
+      <allowWildcards>false</allowWildcards>
+      <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+      <ignoreComments>false</ignoreComments>
+    </con:configuration>
+  </con:assertion>
+  <con:headerValidator type="NTLM"/>
+</con:mockService>

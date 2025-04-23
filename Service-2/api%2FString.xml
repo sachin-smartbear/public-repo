@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/String" id="e7666017-0bda-4f04-8d98-643a3a6d50fe">
+  <con:settings>
+    <con:setting id="e7666017-0bda-4f04-8d98-643a3a6d50fefileName">api%2FString</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="2d0824d2-157e-4b74-8726-8f259c6b3982" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="26906f77-7f5e-4f49-9d79-01812047a830" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://rapis02.localhost.local/WebAPI2/api/String</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="231abffb-4f4b-429d-bf3a-e2496c9e7c1e" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="c0b54523-e0cf-4295-916a-06b8c9c22100" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/Complex" id="70e4e47c-49ec-4f3a-8abd-ed20a271f06f">
+  <con:settings>
+    <con:setting id="70e4e47c-49ec-4f3a-8abd-ed20a271f06ffileName">api%2FComplex</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="091d4329-8a37-469d-b339-5b7580908392" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="4cafe328-5221-41ed-aebe-d00319546bcc" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://rapis02.localhost.local/WebAPI2/api/Complex</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="POST" id="49845fdf-fe60-42f3-b2bc-c11201d857b4" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="937f6211-1d89-4b80-9ccf-59a5aee87a74" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:request>{
+  "StrValue": "sample string 1",
+  "IntValue": 2,
+  "DoubleList": [
+    1.1,
+    2.1
+  ]
+}</con:request>
+      <con:originalUri>http://rapis02.localhost.local/WebAPI2/api/Complex</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/Values" id="a354b3ed-a05d-4168-b127-582bd3b2498e">
+  <con:settings>
+    <con:setting id="a354b3ed-a05d-4168-b127-582bd3b2498efileName">api%2FValues</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="fcbcb25c-ea43-438c-890f-0f7e10d407e4" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="20943619-0ad9-4f53-862e-cc93f284397b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="acfff913-f136-4cee-85a9-6d2ea6b44927" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="612c8835-887a-4ae5-8bf6-15b7e71ac6dd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="" path="api/String/{id}" id="5e9f0d73-1991-4da5-b7c4-908ae0ea9d71">
+  <con:settings>
+    <con:setting id="5e9f0d73-1991-4da5-b7c4-908ae0ea9d71fileName">api%2FString%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="45d0df26-3e02-4695-940c-3ed19c56f129" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="6fcf7629-6dcb-47ce-a8cf-8dacbf6e7d92" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="bf13a80d-9687-4fdc-82ab-04962e18341d" method="PUT">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="1703c645-e5a5-4609-b932-583e81748677" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="" id="bfaef6a0-54b4-4382-885d-f6075e9c3bc5" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="47ca3b5c-944c-41f7-97c3-53628131fea4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.localhost.local:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

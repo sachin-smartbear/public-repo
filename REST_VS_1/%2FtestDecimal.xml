@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/testDecimal" method="GET" resourcePath="/testDecimal" id="7da85e1c-d1ae-4f83-a164-12996ed466c9">
+  <con:settings>
+    <con:setting id="7da85e1c-d1ae-4f83-a164-12996ed466c9fileName">%2FtestDecimal</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:parameterDispatcherRuleContainer/>
+  <con:routeScript/>
+  <con:requestRouteScript/>
+  <con:response name="Response 1" id="b4ba07f8-3c3c-4773-bfef-dfc9405fa202" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>
